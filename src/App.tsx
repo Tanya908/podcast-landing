@@ -1,9 +1,10 @@
+import { Header } from './layout/Header'
 
 const App = () => {
     return (
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <div className="max-w-[1600px] mx-auto">
+            <Header />
+        </div>
     )
 }
 export default App
