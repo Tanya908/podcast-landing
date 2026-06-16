@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import "tailwindcss";
+
+:root {
+    --color-verde-oscuro: #30402A;
+    --color-verde: #4B6742;
+    --color-gris: #92998F;
+    --color-gris-oscuro: #B3BCB0;
+    --color-gris-claro: #F5F5ED;
+    --color-blanco: #FFFFFF;
+    --color-amarillo: #E5E787;
+    --color-rojo: #E10200;
+
+    --font-poppins: "Poppins", system-ui, -apple-system, "Segoe UI", "Roboto", "Arial", sans-serif;
+    --font-dancing-script: "Dancing", system-ui, -apple-system, "Segoe UI", "Roboto", "Arial", sans-serif;
+
+    --text-title-size-mobile: 35px;
+    --text-title-size-desktop: 90px;
+    --text-title-line-height: 1.05;
+    --text-title-weight: 700;
+
+    --text-h1-size-mobile: 32px;
+    --text-h1-size-desktop: 72px;
+    --text-h1-line-height: 1.05;
+    --text-h1-weight: 600;
+    --text-h1-transform: uppercase;
+
+    --text-h2-size-mobile: 24px;
+    --text-h2-size-desktop: 33px;
+    --text-h2-line-height: 1.25;
+    --text-h2-line-height-alt: 1.2;
+    --text-h2-weight: 600;
+    --text-h2-transform: uppercase;
+
+    --text-h3-size-mobile: 21px;
+    --text-h3-size-desktop: 28px;
+    --text-h3-line-height: 1.25;
+    --text-h3-weight: 500;
+    --text-h3-transform: uppercase;
+
+    --text-p1-size: 19px;
+    --text-p1-weight: 400;
+    --text-p1-weight-medium: 500;
+    --text-p1-line-height: 1.3;
+    --text-p1-line-height-medium: 1;
+
+    --btn-font-size: 16px;
+    --btn-font-weight: 600;
+    --btn-line-height: 1;
+    --btn-text-transform: uppercase;
+
+    --text-p2-size: 16px;
+    --text-p2-weight: 400;
+    --text-p2-weight-caps: 600;
+    --text-p2-line-height: 1.3;
+    --text-p2-line-height-alt: 1;
+    --text-p2-transform: uppercase;
+
+    --text-decorative-size-mobile: 36px;
+    --text-decorative-size-desktop: 44px;
+    --text-decorative-weight: 400;
+}
+@layer base {
+    html, body{
+        font-family: var(--font-poppins);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+        color: var(--color-verde);
+    }
+}
+
+@utility text-title {
+    font-size: var(--text-title-size-mobile);
+    font-weight:var(--text-title-weight);
+    line-height:var(--text-title-line-height);
+
+    @variant md {
+        font-size: var(--text-title-size-desktop);
+    }
+}
+
+@utility text-h1 {
+    font-size: var(--text-h1-size-mobile);
+    font-weight:var(--text-h1-weight);
+    text-transform:var(--text-h1-transform);
+    line-height:var(--text-h1-line-height);
+
+    @variant md {
+        font-size: var(--text-h1-size-desktop);
+    }
+}
+
+@utility text-h2 {
+    font-size: var(--text-h2-size-mobile);
+    font-weight:var(--text-h2-weight);
+    line-height:var(--text-h2-line-height);
+
+    @variant md {
+        font-size: var(--text-h2-size-desktop);
+    }
+}
+
+@utility text-h2-caps {
+    @apply text-h2;
+    line-height: var(--text-h2-line-height-alt);
+    text-transform: var(--text-h2-transform);
+}
+
+@utility text-h3 {
+    font-size: var(--text-h3-size-mobile);
+    font-weight:var(--text-h3-weight);
+    text-transform:var(--text-h3-transform);
+    line-height:var(--text-h3-line-height);
+
+    @variant md {
+        font-size: var(--text-h3-size-desktop);
+    }
+}
+
+@utility text-p1 {
+    font-size: var(--text-p1-size);
+    line-height: var(--text-p1-line-height);
+    font-weight: var(--text-p1-weight);
+}
+
+@utility text-p1-medium {
+    @apply text-p1;
+    font-weight: var(--text-p1-weight-medium);
+    line-height: var(--text-p1-line-height-medium);
+}
+
+@utility text-btn {
+    font-size: var(--btn-font-size) ;
+    font-weight: var(--btn-font-weight) ;
+    line-height: var(--btn-line-height) ;
+    text-transform: var(--btn-text-transform);
+}
+
+@utility text-p2 {
+    font-size: var(--text-p2-size) ;
+    font-weight: var(--text-p2-weight) ;
+    line-height: var(--text-p2-line-height) ;
+}
+
+@utility text-p2-caps {
+    @apply text-p2;
+    text-transform: var(--text-p2-transform);
+    font-weight: var(--text-p2-weight-caps);
+    line-height: var(--text-p2-line-height-alt);
+}
+
+@utility text-decorative {
+    font-size: var(--text-decorative-size-mobile);
+    font-weight: var(--text-decorative-weight);
+    font-family: var(--font-dancing-script);
+
+    @variant md {
+        font-size: var(--text-decorative-size-desktop);
+    }
+}
+
+@layer utilities {
+    .text-hover {
+        @apply hover:text-[var(--color-rojo)] active:text-[var(--color-rojo)] focus:text-[var(--color-rojo)] transition-colors duration-400;
+    }
+}
