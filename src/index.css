@@ -180,6 +180,18 @@
         @apply bg-[var(--color-blanco)] text-[var(--color-verde)] hover:text-[#4e803f] active:text-[#4f803f]
                disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
     }
+
+    .subscription-bg-hover {
+        @apply transition-[transform,background-color] duration-300
+               group-hover:scale-95 group-hover:bg-[var(--color-verde-oscuro)]
+               group-active:scale-95 group-active:bg-[var(--color-verde-oscuro)];
+    }
+
+    .subscription-text-hover {
+        @apply transition-[transform,color] duration-300
+               group-hover:scale-95 group-hover:text-[var(--color-verde-oscuro)]
+               group-active:scale-95 group-active:text-[var(--color-verde-oscuro)];
+    }
 }
 
 /* Slider (About section) */
