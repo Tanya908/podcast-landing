@@ -76,7 +76,7 @@
     font-weight:var(--text-title-weight);
     line-height:var(--text-title-line-height);
 
-    @variant md {
+    @variant lg {
         font-size: var(--text-title-size-desktop);
     }
 }
@@ -163,6 +163,6 @@
 
 @layer utilities {
     .text-hover {
-        @apply hover:text-[var(--color-rojo)] active:text-[var(--color-rojo)] focus:text-[var(--color-rojo)] transition-colors duration-400;
+        @apply hover:text-[var(--color-verde-oscuro)] active:text-[var(--color-verde-oscuro)] focus:text-[var(--color-verde-oscuro)] transition-colors duration-400;
     }
 }

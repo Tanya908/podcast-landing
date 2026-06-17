@@ -26,8 +26,8 @@ export const Header = () => {
     }, [isOpen]);
 
     return (
-        <header className="py-8 bg-transparent">
-            <div className="flex items-center justify-between px-4 lg:px-0 md:mx-10 pb-4
+        <header className="relative z-[100] py-6 md:py-8">
+            <div className="flex items-center justify-between px-4 md:px-0 md:mx-10 pb-4
                             border-b border-transparent lg:border-[var(--color-verde)]">
                 <a href="/" className="relative z-[60]">
                     <img
@@ -38,14 +38,14 @@ export const Header = () => {
 
                 <nav className="hidden lg:flex lg:justify-between lg:gap-6">
                     {navLinks.map((item)=> (
-                            <a
-                                key={item.id}
-                                href={item.href}
-                                target={item.href.startsWith("http") ? "_blank" : undefined}
-                                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                className="text-p2-caps text-[var(--color-verde)]">
-                                {item.text}
-                            </a>
+                        <a
+                            key={item.id}
+                            href={item.href}
+                            target={item.href.startsWith("http") ? "_blank" : undefined}
+                            rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                            className="text-p2-caps text-[var(--color-verde)] text-hover">
+                            {item.text}
+                        </a>
                     ))}
                 </nav>
 
@@ -66,21 +66,21 @@ export const Header = () => {
             </div>
 
             <div
-                className={`fixed left-0 right-0 top-20 bottom-0 z-50 bg-white transition-all duration-500 ease-out 
+                className={`fixed inset-0 z-50 bg-[var(--color-blanco)] transition-all duration-500 ease-out 
                             ${ isOpen ? "opacity-100 translate-y-0 pointer-events-auto lg:hidden"
-                                      : "opacity-0 -translate-y-4 pointer-events-none"}
+                    : "opacity-0 -translate-y-4 pointer-events-none"}
                 `}
             >
-                <nav  className="flex flex-col items-center gap-10 py-16">
+                <nav className="flex flex-col items-center gap-10 pt-[120px] pb-16 ">
                     {navLinks.map((item)=> (
-                            <a
-                                key={item.id}
-                                href={item.href}
-                                target={item.href.startsWith("http") ? "_blank" : undefined}
-                                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                className="text-p2-caps text-[var(--color-verde)]" >
-                                {item.text}
-                            </a>
+                        <a
+                            key={item.id}
+                            href={item.href}
+                            target={item.href.startsWith("http") ? "_blank" : undefined}
+                            rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                            className="text-p2-caps text-[var(--color-verde)] text-hover" >
+                            {item.text}
+                        </a>
                     ))}
                 </nav>
 
