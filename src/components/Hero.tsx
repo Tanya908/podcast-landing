@@ -16,7 +16,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="absolute inset-x-0 top-0 z-50">
+        <section className="relative w-[100vw] ml-[calc(50%-50vw)]">
             <div className="overflow-x-hidden">
                 <img
                     src={StudioMobile}

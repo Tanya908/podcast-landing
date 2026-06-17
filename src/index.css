@@ -166,3 +166,19 @@
         @apply hover:text-[var(--color-verde-oscuro)] active:text-[var(--color-verde-oscuro)] focus:text-[var(--color-verde-oscuro)] transition-colors duration-400;
     }
 }
+
+/* Slider (About section) */
+
+@keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@utility ticker {
+    animation: ticker 20s linear infinite;
+    will-change: transform;
+}
+
+@utility ticker-fade {
+    @apply absolute inset-y-0 w-16 z-10 pointer-events-none from-[var(--color-blanco)] to-transparent
+}

@@ -26,7 +26,7 @@ export const Header = () => {
     }, [isOpen]);
 
     return (
-        <header className="relative z-[100] py-6 md:py-8">
+        <header className="absolute inset-x-0 top-0 z-[100] py-6 md:py-8">
             <div className="flex items-center justify-between px-4 md:px-0 md:mx-10 pb-4
                             border-b border-transparent lg:border-[var(--color-verde)]">
                 <a href="/" className="relative z-[60]">
