@@ -1,6 +1,7 @@
 import logo from '../assets/logo.svg'
 import { Cross } from 'hamburger-react';
 import {useEffect, useState} from "react";
+import {Button} from "../components/Button.tsx";
 
 type navLink = {
     href: string;
@@ -56,13 +57,9 @@ export const Header = () => {
                     />
                 </div>
 
-                <a
-                    href="#"
-                    className="relative z-[60] hidden lg:inline-flex text-btn items-center justify-center
-                               bg-[var(--color-verde)] text-[var(--color-blanco)] px-6 py-4"
-                >
+                <Button href="#" className="relative z-[60] hidden lg:inline-flex">
                     Únete a la newsletter
-                </a>
+                </Button>
             </div>
 
             <div
@@ -83,14 +80,11 @@ export const Header = () => {
                         </a>
                     ))}
                 </nav>
-
-                <a
-                    href="#"
-                    className="block w-fit mx-auto text-btn bg-[var(--color-verde)]
-                               text-[var(--color-blanco)] px-6 py-4"
-                >
-                    Únete a la newsletter
-                </a>
+                <div className="flex justify-center">
+                    <Button href="#" className="w-fit mx-auto">
+                        Únete a la newsletter
+                    </Button>
+                </div>
             </div>
         </header>
     )

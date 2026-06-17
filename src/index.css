@@ -161,9 +161,24 @@
     }
 }
 
+@layer components {
+    .button-base {
+        @apply text-btn inline-flex items-center justify-center px-6 py-4;
+    }
+}
+
 @layer utilities {
     .text-hover {
-        @apply hover:text-[var(--color-verde-oscuro)] active:text-[var(--color-verde-oscuro)] focus:text-[var(--color-verde-oscuro)] transition-colors duration-400;
+        @apply hover:text-[var(--color-verde-oscuro)] active:text-[var(--color-verde-oscuro)]
+               focus:text-[var(--color-verde-oscuro)] transition-colors duration-400;
+    }
+    .button-green {
+        @apply bg-[var(--color-verde)] text-[var(--color-blanco)] hover:bg-[#4f803f] active:bg-[#4f803f]
+               disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
+    }
+    .button-white {
+        @apply bg-[var(--color-blanco)] text-[var(--color-verde)] hover:text-[#4e803f] active:text-[#4f803f]
+               disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
     }
 }
 
