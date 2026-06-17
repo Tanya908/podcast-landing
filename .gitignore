@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude local skills and commands — content is machine-local, keep only structure
+.claude/skills/**
+.claude/commands/**
+!.claude/skills/**/.gitkeep
+!.claude/commands/.gitkeep
