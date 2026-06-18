@@ -11,7 +11,7 @@ const Collaboration = () => {
                         src={TextHighlight}
                         aria-hidden="true"
                         alt=""
-                        className="absolute inset-0 w-full h-full object-fill pointer-events-none scale-0 lg:scale-100"
+                        className="absolute inset-0 w-full h-full object-fill pointer-events-none scale-105"
                     />
                     <span className="relative">Quieres</span>
                 </span>
@@ -19,7 +19,7 @@ const Collaboration = () => {
             </h2>
 
             <div className="grid bg-[var(--color-gris-claro)] lg:grid-cols-[1fr_1.5fr] items-center">
-                <div className="px-3 lg:px-8 py-10">
+                <div className="px-3 md:px-8 py-10">
                     <h2 className="text-h2-caps mb-6 w-full lg:w-sm">Conecta con +2.5M de Personas</h2>
                     <div className="w-full xl:max-w-lg">
                         <p className="text-p1 text-[var(--color-gris)] mb-2">

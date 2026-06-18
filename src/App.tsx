@@ -5,6 +5,7 @@ import Subscription from "./components/Subscription.tsx";
 import MeetTheHost from "./components/MeetTheHost.tsx";
 import StayUpdated from "./components/StayUpdated.tsx";
 import Collaboration from "./components/Collaboration.tsx";
+import Store from "./components/Store.tsx";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <MeetTheHost/>
             <StayUpdated/>
             <Collaboration/>
+            <Store/>
         </div>
     )
 }
