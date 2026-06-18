@@ -6,6 +6,7 @@ import MeetTheHost from "./components/MeetTheHost.tsx";
 import StayUpdated from "./components/StayUpdated.tsx";
 import Collaboration from "./components/Collaboration.tsx";
 import Store from "./components/Store.tsx";
+import Programs from "./components/Programs.tsx";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
             <StayUpdated/>
             <Collaboration/>
             <Store/>
+            <Programs/>
         </div>
     )
 }
