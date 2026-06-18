@@ -192,6 +192,37 @@
                group-hover:scale-95 group-hover:text-[var(--color-verde-oscuro)]
                group-active:scale-95 group-active:text-[var(--color-verde-oscuro)];
     }
+
+    .input-field {
+        @apply hover:placeholder:text-[var(--color-blanco)]
+               focus:text-[var(--color-blanco)]
+               focus:placeholder:text-[var(--color-blanco)]
+               [&:not(:placeholder-shown)]:text-[var(--color-blanco)]
+               transition-colors
+               duration-400;
+    }
+
+    .input-text {
+        @apply h-12 w-full px-4 border-b border-[var(--color-gris-claro)] bg-transparent
+               text-p2 text-[var(--color-gris-oscuro)] outline-none;
+    }
+
+    .checkbox-custom {
+        @apply appearance-none border border-[var(--color-gris-oscuro)] cursor-pointer;
+        &:checked {
+            background-image: url('/src/assets/icons/checked-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .checkbox-text {
+        @apply text-p2 text-[var(--color-blanco)];
+    }
+
+    .checkbox-input {
+        @apply mt-0.5 size-4 shrink-0;
+    }
 }
 
 /* Slider (About section) */
