@@ -8,6 +8,7 @@ import Collaboration from "./components/Collaboration.tsx";
 import Store from "./components/Store.tsx";
 import Programs from "./components/Programs.tsx";
 import Meet from "./components/Meet.tsx";
+import Footer from "./layout/Footer.tsx";
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
             <Store/>
             <Programs/>
             <Meet/>
+            <Footer/>
         </div>
     )
 }

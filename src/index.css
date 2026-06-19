@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 :root {
-    --color-verde-oscuro: #30402A;
+    --color-verde-oscuro: #263322;
     --color-verde: #4B6742;
     --color-gris: #92998F;
     --color-gris-oscuro: #B3BCB0;
@@ -183,14 +183,14 @@
 
     .subscription-bg-hover {
         @apply transition-[transform,background-color] duration-300
-               group-hover:scale-95 group-hover:bg-[var(--color-verde-oscuro)]
-               group-active:scale-95 group-active:bg-[var(--color-verde-oscuro)];
+               group-hover:scale-95 group-hover:bg-[var(--color-gris-oscuro)]
+               group-active:scale-95 group-active:bg-[var(--color-gris-oscuro)];
     }
 
     .subscription-text-hover {
         @apply transition-[transform,color] duration-300
-               group-hover:scale-95 group-hover:text-[var(--color-verde-oscuro)]
-               group-active:scale-95 group-active:text-[var(--color-verde-oscuro)];
+               group-hover:scale-95 group-hover:text-[var(--color-gris-oscuro)]
+               group-active:scale-95 group-active:text-[var(--color-gris-oscuro)];
     }
 
     .input-field {
@@ -222,6 +222,11 @@
 
     .checkbox-input {
         @apply mt-0.5 size-4 shrink-0;
+    }
+
+    .footer-hover {
+        @apply hover:text-[var(--color-blanco)] active:text-[var(--color-blanco)]
+        focus:text-[var(--color-blanco)] transition-colors duration-400;
     }
 }
 
