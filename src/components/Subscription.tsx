@@ -13,7 +13,7 @@ const Subscriptions:SocialLink[] = [
 
 const Subscription = () => {
     return (
-        <section className="my-28 page-spacing">
+        <section id="subscription" className="my-28 page-spacing">
             <h2 className="text-h1 mb-10 max-w-5xl">
                 Puedes suscribirte y escuchar el pódcast en
             </h2>

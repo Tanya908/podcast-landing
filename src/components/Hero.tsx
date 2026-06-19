@@ -1,6 +1,7 @@
 import StudioMobile from "../assets/hero-img-sm.webp"
 import StudioDesktop from "../assets/hero-img.webp"
 import ScrollDown from "../assets/icons/scroll-down.svg"
+import {Button} from "./Button.tsx";
 
 
 const Hero = () => {
@@ -37,13 +38,12 @@ const Hero = () => {
                     TIENE SENTIDO PÓDCAST
                 </h1>
 
-                <a
-                    href="#"
-                    className="text-btn bg-[var(--color-verde)] whitespace-nowrap text-[var(--color-blanco)]
-                               px-6 py-4 absolute top-1/2 left-1/2 -translate-x-1/2 z-10 lg:hidden"
+                <Button
+                    href="#stay-updated"
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap lg:hidden"
                 >
                     Únete a la newsletter
-                </a>
+                </Button>
 
                 <button
                     onClick={handleScrollDown}

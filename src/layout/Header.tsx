@@ -5,8 +5,8 @@ import {Button} from "../components/Button.tsx";
 import type {NavLink} from "../types";
 
 const navLinks: NavLink[] = [
-    {href:"/acerca-de-nosotros", text:"acerca de nosotros", id:1},
-    {href:"/suscripcion", text:"Suscripción", id:2},
+    {href:"#about", text:"acerca de nosotros", id:1},
+    {href:"#subscription", text:"Suscripción", id:2},
     {href:"https://azimutlife.co/", text:"Azimut Life", id:3},
 ]
 
@@ -37,6 +37,7 @@ export const Header = () => {
                         <a
                             key={item.id}
                             href={item.href}
+                            onClick={() => setIsOpen(false)}
                             target={item.href.startsWith("http") ? "_blank" : undefined}
                             rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                             className="text-p2-caps text-[var(--color-verde)] header-hover">
@@ -52,7 +53,7 @@ export const Header = () => {
                     />
                 </div>
 
-                <Button href="#" className="relative z-[60] hidden lg:inline-flex">
+                <Button href="#stay-updated" className="relative z-[60] hidden lg:inline-flex">
                     Únete a la newsletter
                 </Button>
             </div>
@@ -68,6 +69,7 @@ export const Header = () => {
                         <a
                             key={item.id}
                             href={item.href}
+                            onClick={() => setIsOpen(false)}
                             target={item.href.startsWith("http") ? "_blank" : undefined}
                             rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                             className="text-p2-caps text-[var(--color-verde)] text-hover" >
@@ -76,7 +78,11 @@ export const Header = () => {
                     ))}
                 </nav>
                 <div className="flex justify-center">
-                    <Button href="#" className="w-fit mx-auto">
+                    <Button
+                        onClick={() => setIsOpen(false)}
+                        href="#stay-updated"
+                        className="w-fit mx-auto"
+                    >
                         Únete a la newsletter
                     </Button>
                 </div>

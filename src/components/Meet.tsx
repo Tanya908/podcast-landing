@@ -32,7 +32,7 @@ const Meet = () => {
                     <p className="text-p1 text-[var(--color-gris)]">
                         Nuestra tienda online te ofrece herramientas diseñadas para ayudarte en este viaje hacia el bienestar, la autorrealización y el crecimiento personal a través de journals, cartas, cuadernos, bolígrafos y herramientas que te acompañarán en tu camino hacia una vida con sentido.
                     </p>
-                    <Button href="#" variant="green" className="w-full md:w-fit">
+                    <Button href="https://clubdelbienestar.com/alimentacion40" variant="green" className="w-full md:w-fit">
                         Quiero saber más
                     </Button>
                 </div>
