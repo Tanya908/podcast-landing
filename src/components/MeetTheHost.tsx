@@ -3,7 +3,7 @@ import EliRomero from '../assets/eli-romero.webp'
 
 const MeetTheHost = () => {
     return (
-        <section className="my-16 mx-4 md:mx-10">
+        <section className="my-16 page-spacing">
            <div className="grid items-start lg:grid-cols-2 lg:gap-10">
                <div className="py-10 pl-0 flex flex-col gap-10 order-1 lg:py-0 lg:order-none lg:col-start-2 lg:row-start-1">
                    <h2 className="text-h1 text-[var(--color-verde)]">
@@ -14,7 +14,7 @@ const MeetTheHost = () => {
                             src={TextHighlight}
                             aria-hidden="true"
                             alt=""
-                            className="absolute inset-0 w-full h-full object-fill pointer-events-none"
+                            className="text-highlighter"
                         />
                         <span className="relative">Eli Romero</span>
                     </span>

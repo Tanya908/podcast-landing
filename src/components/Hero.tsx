@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <h1 className="text-title text-[var(--color-verde-oscuro)] text-center w-[50%]
+                <h1 className="text-title text-[var(--color-verde-oscuro)] text-center max-w-sm
                                absolute z-10 top-[20%] left-1/2 -translate-x-1/2"
                 >
                     TIENE SENTIDO PÓDCAST
@@ -48,9 +48,9 @@ const Hero = () => {
                 <button
                     onClick={handleScrollDown}
                     aria-label="Scroll to next section"
-                    className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 transition-transform duration-300 hover:scale-110 active:scale-95"
+                    className="absolute bottom-10 lg:bottom-14 left-1/2 -translate-x-1/2 z-10 transition-transform duration-300 hover:scale-110 active:scale-95"
                 >
-                    <img src={ScrollDown} aria-hidden="true" alt="" />
+                    <img src={ScrollDown} aria-hidden="true" alt="" className="w-full md:w-16" />
                 </button>
             </div>
         </section>

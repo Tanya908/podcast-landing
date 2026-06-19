@@ -31,7 +31,7 @@ const tickerLogos: CompanyLogo[] = [...companyLogos, ...companyLogos]
 const About = () => {
     return (
         <section id="about" className="my-16">
-            <div className="flex flex-col gap-4 px-4 lg:flex-row lg:gap-0 lg:items-stretch lg:h-24 lg:mx-10 lg:px-0">
+            <div className="flex flex-col gap-4 page-spacing lg:flex-row lg:gap-0 lg:items-stretch lg:h-24 lg:px-0">
                 <div className="mr-10 bg-[var(--color-gris-claro)] px-3 py-4 w-fit flex items-center lg:px-8 lg:w-56 lg:shrink-0">
                     <p className="text-p2-caps text-[var(--color-verde)]"> Nos has visto en: </p>
                 </div>
@@ -67,7 +67,7 @@ const About = () => {
                                 src={TextHighlight}
                                 aria-hidden="true"
                                 alt=""
-                                className="absolute inset-0 w-full h-full object-fill pointer-events-none"
+                                className="text-highlighter"
                             />
                             <span className="relative"> desde todas sus </span>
                         </span>

@@ -4,17 +4,17 @@ import TextHighlight from "../assets/text-highlight.svg";
 
 const Store = () => {
     return (
-        <section className="mx-4 md:mx-10 mb-20">
+        <section className="page-spacing mb-20">
             <div className="grid lg:grid-cols-[1fr_1.5fr] items-center">
 
-                <div className="bg-[var(--color-verde-oscuro)] px-3 md:px-8 py-10 md:py-16">
+                <div className="bg-[var(--color-verde-oscuro)] store-spacing">
                     <h2 className="text-h2-caps text-[var(--color-blanco)] mb-6 w-full lg:w-sm">
                         <span className="relative inline-block whitespace-nowrap">
                             <img
                                 src={TextHighlight}
                                 aria-hidden="true"
                                 alt=""
-                                className="absolute inset-0 w-full h-full object-fill pointer-events-none scale-105"
+                                className="text-highlighter scale-105"
                             />
                             <span className="relative text-[var(--color-rojo)]">Azimut Life: </span>
                         </span>
@@ -34,9 +34,7 @@ const Store = () => {
                     </Button>
                 </div>
 
-                <div className="h-full bg-[var(--color-gris-claro)] flex justify-center items-center
-                                px-3 md:px-8 py-10 md:py-16"
-                >
+                <div className="h-full bg-[var(--color-gris-claro)] flex justify-center items-center store-spacing">
                     <img src={Products}
                          alt="Azimut Life wellness products"
                          className="w-full max-w-[584px] aspect-[584/326] object-contain"

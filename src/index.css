@@ -165,32 +165,39 @@
     .button-base {
         @apply text-btn inline-flex items-center justify-center px-6 py-4;
     }
+
+    .button-green {
+        @apply bg-[var(--color-verde)] text-[var(--color-blanco)] hover:bg-[#4f803f] active:bg-[#4f803f]
+        disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
+    }
+
+    .button-white {
+        @apply bg-[var(--color-blanco)] text-[var(--color-verde)] hover:text-[#4e803f] active:text-[#4f803f]
+        disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
+    }
 }
 
 @layer utilities {
-    .text-hover {
+
+    .page-spacing{
+        @apply mx-4 md:mx-10;
+    }
+
+    .header-hover {
         @apply hover:text-[var(--color-verde-oscuro)] active:text-[var(--color-verde-oscuro)]
                focus:text-[var(--color-verde-oscuro)] transition-colors duration-400;
     }
-    .button-green {
-        @apply bg-[var(--color-verde)] text-[var(--color-blanco)] hover:bg-[#4f803f] active:bg-[#4f803f]
-               disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
-    }
-    .button-white {
-        @apply bg-[var(--color-blanco)] text-[var(--color-verde)] hover:text-[#4e803f] active:text-[#4f803f]
-               disabled:text-[var(--color-gris)] disabled:cursor-not-allowed;
+
+    .text-highlighter {
+        @apply absolute inset-0 w-full h-full object-fill pointer-events-none;
     }
 
-    .subscription-bg-hover {
-        @apply transition-[transform,background-color] duration-300
-               group-hover:scale-95 group-hover:bg-[var(--color-gris-oscuro)]
-               group-active:scale-95 group-active:bg-[var(--color-gris-oscuro)];
+    .icon-background {
+        @apply bg-[var(--color-verde)] p-4 rounded-full flex items-center justify-center
     }
 
-    .subscription-text-hover {
-        @apply transition-[transform,color] duration-300
-               group-hover:scale-95 group-hover:text-[var(--color-gris-oscuro)]
-               group-active:scale-95 group-active:text-[var(--color-gris-oscuro)];
+    .social-icon {
+        @apply transition-transform duration-300 group-hover:scale-95
     }
 
     .input-field {
@@ -210,7 +217,7 @@
     .checkbox-custom {
         @apply appearance-none border border-[var(--color-gris-oscuro)] cursor-pointer;
         &:checked {
-            background-image: url('/src/assets/icons/checked-icon.svg');
+            background-image: url('/public/checked-icon.svg');
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -224,9 +231,25 @@
         @apply mt-0.5 size-4 shrink-0;
     }
 
+    .store-spacing {
+        @apply px-3 md:px-8 py-10 md:py-16;
+    }
+
     .footer-hover {
         @apply hover:text-[var(--color-blanco)] active:text-[var(--color-blanco)]
-        focus:text-[var(--color-blanco)] transition-colors duration-400;
+        focus:text-[var(--color-blanco)] transition-colors duration-300;
+    }
+
+    .subscription-bg-hover {
+        @apply transition-[transform,background-color] duration-300
+               group-hover:scale-95 group-hover:bg-[var(--color-gris-oscuro)]
+               group-active:scale-95 group-active:bg-[var(--color-gris-oscuro)];
+    }
+
+    .subscription-text-hover {
+        @apply transition-[transform,color] duration-300
+               group-hover:scale-95 group-hover:text-[var(--color-gris-oscuro)]
+               group-active:scale-95 group-active:text-[var(--color-gris-oscuro)];
     }
 }
 

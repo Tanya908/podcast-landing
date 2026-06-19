@@ -17,10 +17,9 @@ const Subscriptions:SubscriptionProps[] = [
     {id:4,link:"https://podimo.com/es/shows/tiene-sentido-2", src:Podimo , title:"Podimo"},
 ]
 
-
 const Subscription = () => {
     return (
-        <section className="my-28 mx-4 md:mx-10">
+        <section className="my-28 page-spacing">
             <h2 className="text-h1 mb-10 max-w-5xl">
                 Puedes suscribirte y escuchar el pódcast en
             </h2>
@@ -34,12 +33,11 @@ const Subscription = () => {
                         rel="noopener noreferrer"
                         className="group block p-3 lg:p-8 bg-[var(--color-gris-claro)]"
                     >
-                        <div className="bg-[var(--color-verde)] p-4 rounded-full h-14 w-14 md:w-28 md:h-28
-                                        flex items-center justify-center subscription-bg-hover ">
+                        <div className="icon-background h-14 w-14 md:w-28 md:h-28 subscription-bg-hover">
                             <img
                                 src={item.src}
                                 alt={item.title}
-                                className="transition-transform duration-300 group-hover:scale-95 w-6 h-5 md:w-12 md:h-12"
+                                className="social-icon w-6 h-5 md:w-12 md:h-12"
                             />
                         </div>
 

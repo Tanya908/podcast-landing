@@ -44,7 +44,7 @@ export const Header = () => {
                             href={item.href}
                             target={item.href.startsWith("http") ? "_blank" : undefined}
                             rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                            className="text-p2-caps text-[var(--color-verde)] text-hover">
+                            className="text-p2-caps text-[var(--color-verde)] header-hover">
                             {item.text}
                         </a>
                     ))}

@@ -2,7 +2,7 @@ import { Button } from "./Button";
 
 const StayUpdated = () => {
     return (
-        <section className="my-28 mx-4 md:mx-10 grid md:grid-cols-[5fr_6fr]">
+        <section className="my-28 page-spacing grid md:grid-cols-[5fr_6fr]">
             <div className="bg-[var(--color-verde-oscuro)] flex flex-col gap-8 px-3 py-10 md:px-8 md:py-16">
                 <h2 className="text-h2-caps text-[var(--color-blanco)]">
                     Efecto acumulado: la newsletter de Eli Romero

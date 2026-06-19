@@ -4,14 +4,14 @@ import { Button } from "./Button.tsx";
 
 const Meet = () => {
     return (
-        <section className="mx-4 md:mx-10 mb-20">
+        <section className="page-spacing mb-20">
             <h2 className="text-h2-caps text-[var(--color-verde)] max-w-4xl">
                 <span className="relative inline-block whitespace-nowrap">
                     <img
                         src={TextHighlight}
                         alt=""
                         aria-hidden="true"
-                        className="absolute inset-0 w-full h-full object-fill pointer-events-none scale-105"
+                        className="text-highlighter scale-105"
                     />
                     <span className="relative">Vives hinchada</span>
                 </span>

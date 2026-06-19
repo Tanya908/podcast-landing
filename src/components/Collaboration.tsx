@@ -4,14 +4,14 @@ import {Button} from "./Button.tsx";
 
 const Collaboration = () => {
     return (
-        <section className="mx-4 md:mx-10 mb-28">
+        <section className="page-spacing mb-28">
             <h2 className="text-h1 text-[var(--color-verde)] mb-10 lg:mb-14 max-w-[1000px]">
                 <span className="relative inline-block whitespace-nowrap">
                     <img
                         src={TextHighlight}
                         aria-hidden="true"
                         alt=""
-                        className="absolute inset-0 w-full h-full object-fill pointer-events-none scale-105"
+                        className="text-highlighter scale-105"
                     />
                     <span className="relative">Quieres</span>
                 </span>

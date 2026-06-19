@@ -30,9 +30,9 @@ const navLinks: navLink[] = [
 
 const Footer = () => {
     return (
-        <footer className="mx-4 md:mx-10 mt-20 mb-4 bg-[var(--color-verde-oscuro)] py-10 px-3 md:px-10">
+        <footer className="page-spacing mt-20 mb-4 bg-[var(--color-verde-oscuro)] py-10 px-3 md:px-10">
 
-            <img src={LogoLight} alt="" className="mb-10 mx-auto w-[180px] md:w-sm"/>
+            <img src={LogoLight} alt="Tiene Sentido Pódcast" className="mb-10 mx-auto w-[180px] md:w-sm"/>
 
             <div className="flex items-center justify-between md:justify-center md:gap-8 pb-8 max-w-sm mx-auto">
                 {Socials.map((item) => (
@@ -43,12 +43,11 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         className="group block p-3 lg:p-8"
                     >
-                        <div className="bg-[var(--color-verde)] p-4 rounded-full h-[72px] w-[72px] md:w-28 md:h-28
-                                        flex items-center justify-center subscription-bg-hover">
+                        <div className="h-14 w-14 md:h-20 md:w-20 icon-background subscription-bg-hover">
                             <img
                                 src={item.src}
                                 alt={item.title}
-                                className="transition-transform duration-300 group-hover:scale-95 w-8 h-8 md:w-12 md:h-12"
+                                className="social-icon w-8 h-8"
                             />
                         </div>
                     </a>

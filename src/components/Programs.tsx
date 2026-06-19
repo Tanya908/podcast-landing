@@ -3,7 +3,7 @@ import TextHighlight from "../assets/text-highlight.svg";
 
 const Programs = () => {
     return (
-        <section className="mx-4 md:mx-10 mb-20 grid md:grid-cols-[2fr_1fr] lg:grid-cols-2 md:gap-10">
+        <section className="page-spacing mb-20 grid md:grid-cols-[2fr_1fr] lg:grid-cols-2 md:gap-10">
 
             <a href="https://youtu.be/8Hl2P6Lw5d8?si=-jgL3Iz65cJNfqYq" >
                 <img src={Banner} alt="Restaura tu microbiota"
