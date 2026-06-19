@@ -2,15 +2,9 @@ import YouTube from "../assets/icons/social-icons/youtube.svg"
 import Spotify from "../assets/icons/social-icons/spotify.svg"
 import ApplePodcast from "../assets/icons/social-icons/apple-podcast.svg"
 import Podimo from "../assets/icons/social-icons/portfolio.svg"
+import type {SocialLink} from "../types";
 
-type SubscriptionProps = {
-    link: string,
-    src: string,
-    title: string,
-    id:number,
-}
-
-const Subscriptions:SubscriptionProps[] = [
+const Subscriptions:SocialLink[] = [
     {id:1,link:"https://www.youtube.com/@TieneSentidoPodcast", src:YouTube , title:"YouTube"},
     {id:2,link:"https://open.spotify.com/show/0HtxMCdhMaD8KCsgRYJnJg", src:Spotify, title:"Spotify"},
     {id:3,link:"https://podcasts.apple.com/es/podcast/tiene-sent", src:ApplePodcast, title:"Apple Podcast"},

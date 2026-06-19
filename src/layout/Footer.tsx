@@ -2,27 +2,15 @@ import LogoLight from "../assets/logo-white.svg"
 import TikTok from "../assets/icons/social-icons/tiktok.svg";
 import YouTube from "../assets/icons/social-icons/youtube.svg"
 import Instagram from "../assets/icons/social-icons/instagram.svg"
+import type {NavLink, SocialLink} from "../types";
 
-type SocialsProps = {
-    link: string,
-    src: string,
-    title: string,
-    id:number,
-}
-
-type navLink = {
-    href: string;
-    text: string;
-    id: number;
-}
-
-const Socials:SocialsProps[] = [
+const Socials:SocialLink[] = [
     {id:1,link:"https://www.youtube.com/@TieneSentidoPodcast", src:YouTube , title:"YouTube"},
     {id:2,link:"http://instagram.com/tienesentidopodcast", src:Instagram, title:"Instagram"},
     {id:3,link:"https://www.tiktok.com/discover/tiene-sentido-podcast", src:TikTok , title:"TikTok"},
 ]
 
-const navLinks: navLink[] = [
+const navLinks: NavLink[] = [
     {href:"#", text:"Aviso Legal", id:1},
     {href:"/privacy-policy.html", text:"Política de privacidad", id:2},
     {href:"/cookies-policy.html", text:"Política de cookies", id:3},

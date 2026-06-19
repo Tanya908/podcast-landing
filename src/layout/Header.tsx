@@ -2,14 +2,9 @@ import logo from '../assets/logo.svg'
 import { Cross } from 'hamburger-react';
 import {useEffect, useState} from "react";
 import {Button} from "../components/Button.tsx";
+import type {NavLink} from "../types";
 
-type navLink = {
-    href: string;
-    text: string;
-    id: number;
-}
-
-const navLinks: navLink[] = [
+const navLinks: NavLink[] = [
     {href:"/acerca-de-nosotros", text:"acerca de nosotros", id:1},
     {href:"/suscripcion", text:"Suscripción", id:2},
     {href:"https://azimutlife.co/", text:"Azimut Life", id:3},
