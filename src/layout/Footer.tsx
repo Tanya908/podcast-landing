@@ -6,7 +6,7 @@ import type {NavLink, SocialLink} from "../types";
 
 const Socials:SocialLink[] = [
     {id:1,link:"https://www.youtube.com/@TieneSentidoPodcast", src:YouTube , title:"YouTube"},
-    {id:2,link:"http://instagram.com/tienesentidopodcast", src:Instagram, title:"Instagram"},
+    {id:2,link:"https:///instagram.com/tienesentidopodcast", src:Instagram, title:"Instagram"},
     {id:3,link:"https://www.tiktok.com/discover/tiene-sentido-podcast", src:TikTok , title:"TikTok"},
 ]
 

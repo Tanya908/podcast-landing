@@ -8,6 +8,7 @@ type ButtonProps = {
     className?: string;
     disabled?: boolean;
     type?: "button" | "submit";
+    target?: "_blank" | "_self";
 };
 
 export function Button({
@@ -22,8 +23,16 @@ export function Button({
     const classes = `button-base button-${variant} ${className}`.trim();
 
     if (href) {
+        const isExternal = href.startsWith("http");
+
         return (
-            <a href={href} className={classes} onClick={onClick}>
+            <a
+                href={href}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+                className={classes}
+                onClick={onClick}
+            >
                 {children}
             </a>
         );

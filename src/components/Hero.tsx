@@ -2,6 +2,7 @@ import StudioMobile from "../assets/hero-img-sm.webp"
 import StudioDesktop from "../assets/hero-img.webp"
 import ScrollDown from "../assets/icons/scroll-down.svg"
 import {Button} from "./Button.tsx";
+import Blur from "../assets/blur.svg"
 
 
 const Hero = () => {
@@ -32,11 +33,23 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <h1 className="text-title text-[var(--color-verde-oscuro)] text-center max-w-sm
-                               absolute z-10 top-[20%] left-1/2 -translate-x-1/2"
-                >
-                    TIENE SENTIDO PÓDCAST
-                </h1>
+
+                <div className="absolute z-10 top-[20%] left-1/2 -translate-x-1/2">
+                    <img
+                        src={Blur}
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                                   pointer-events-none -z-10 h-full xl:h-[20vw]"
+                    />
+
+                    <h1
+                        className="text-title text-[var(--color-verde-oscuro)] text-center
+                                   w-full md:w-sm lg:w-3xl"
+                    >
+                        TIENE SENTIDO PÓDCAST
+                    </h1>
+                </div>
 
                 <Button
                     href="#stay-updated"
