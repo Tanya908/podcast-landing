@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# Tiene Sentido Podcast Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive landing page built for the **Tiene Sentido Podcast** project.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://podcast-website-2v4.pages.dev/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+This project is a responsive landing page developed for the **Tiene Sentido Podcast**. The website was built with a focus on performance, accessibility, SEO optimization, and responsive user experience across all devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies Used
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+* React Hook Form
+* Cloudflare Pages
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Features
+
+* Fully responsive design
+* Reusable UI components
+* Custom page preloader
+* Form validation with React Hook Form
+* SEO optimization
+* Open Graph and Twitter Cards support
+* Cloudflare Pages deployment
+
+---
+
+## Development Approach
+
+During development, custom AI skills were used to accelerate implementation and maintain consistency across the project:
+
+* **React Component Skill** — generation of reusable React components
+* **Button Creator Skill** — creation of configurable button components
+* **Form Validation Skill** — implementation of form validation and error handling
+* **Preloader Skill** — implementation of the page preloader
+* **Style Guide Skill** — maintaining consistent UI patterns and styling
+
+---
+
+## Key Responsibilities
+
+* Built the landing page from scratch
+* Developed reusable React components
+* Implemented responsive layouts
+* Added form validation and error handling
+* Optimized images and page performance
+* Configured SEO metadata and social sharing tags
+* Implemented custom preloader
+* Deployed the project using Cloudflare Pages
+
+---
+
+## Screenshots
+
+### Hero Section (Desktop)
+
+![Hero Desktop](./docs/screenshots/hero-desktop.webp)
+
+---
+
+### Hero Section (Mobile)
+
+![Hero Mobile](./docs/screenshots/hero-mobile.webp)
+
+---
+### Menu (Mobile)
+
+![Menu Mobile](./docs/screenshots/menu-mobile.webp)
+---
+
+### Newsletter Form
+
+<!-- Insert newsletter form screenshot here -->
+
+![Newsletter Form](./docs/screenshots/newsletter-form.webp)
+
+---
+
+### Full Landing Page
+
+<!-- Insert full-page screenshot here -->
+
+![Full Page](./docs/screenshots/full-page.webp)
+
+---
+
+
+## Installation
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Production Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+## Deployment
+
+The application is deployed using Cloudflare Pages with automated GitHub integration.
+
+## Author
+
+Tetiana Hrytsenko
+
+
