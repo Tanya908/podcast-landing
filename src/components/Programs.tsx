@@ -12,6 +12,7 @@ const Programs = () => {
             >
                 <img src={Banner} alt="Restaura tu microbiota"
                      className="mb-10 transition-transform duration-300 hover:scale-95 active:scale-95"
+                     loading="lazy"
                 />
             </a>
 

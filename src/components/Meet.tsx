@@ -23,6 +23,7 @@ const Meet = () => {
                     src={Meeting}
                     alt="Sesión de bienestar"
                     className="w-full object-cover"
+                    loading="lazy"
                 />
 
                 <div className="mt-10 lg:mt-0 flex flex-col gap-6 lg:gap-8 w-full lg:w-xl">

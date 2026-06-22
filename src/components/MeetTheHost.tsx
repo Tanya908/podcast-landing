@@ -31,6 +31,7 @@ const MeetTheHost = () => {
                            src={EliRomero}
                            alt="Eli Romero, periodista y cofundadora de Azimut Life"
                            className="w-full"
+                           loading="lazy"
                        />
                    </div>
                </div>

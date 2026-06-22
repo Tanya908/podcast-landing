@@ -36,6 +36,7 @@ const Store = () => {
 
                 <div className="h-full bg-[var(--color-gris-claro)] flex justify-center items-center store-spacing">
                     <img src={Products}
+                         loading="lazy"
                          alt="Azimut Life wellness products"
                          className="w-full max-w-[584px] aspect-[584/326] object-contain"
                     />

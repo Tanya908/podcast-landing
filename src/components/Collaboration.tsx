@@ -43,6 +43,7 @@ const Collaboration = () => {
                     <img src={BehindScene}
                          alt="Guest and host meeting in a podcast recording studio"
                          className="w-full h-full object-cover"
+                         loading="lazy"
                     />
                 </div>
             </div>

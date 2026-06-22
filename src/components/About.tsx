@@ -50,6 +50,7 @@ const About = () => {
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
+                                    loading="lazy"
                                     className="max-h-5 max-w-[90px] lg:max-w-[160px] object-contain"
                                 />
                             </div>

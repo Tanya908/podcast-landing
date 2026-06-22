@@ -4,8 +4,11 @@ import ScrollDown from "../assets/icons/scroll-down.svg"
 import {Button} from "./Button.tsx";
 import Blur from "../assets/blur.svg"
 
+type HeroProps = {
+    onImageLoad?: () => void;
+};
 
-const Hero = () => {
+const Hero = ({ onImageLoad }: HeroProps) => {
     const handleScrollDown = (): void => {
         const nextSection = document.getElementById('about');
 
@@ -17,6 +20,10 @@ const Hero = () => {
         }
     };
 
+    const handleImageLoad = () => {
+        onImageLoad?.();
+    };
+
     return (
         <section className="relative w-[100vw] ml-[calc(50%-50vw)]">
             <div className="overflow-x-hidden">
@@ -24,10 +31,16 @@ const Hero = () => {
                     src={StudioMobile}
                     alt="Tiene Sentido Podcast"
                     className="w-full md:hidden"
+                    onLoad={handleImageLoad}
+                    loading="eager"
+                    fetchPriority="high"
                 />
                 <img
                     src={StudioDesktop}
                     alt="Tiene Sentido Podcast"
+                    onLoad={handleImageLoad}
+                    loading="eager"
+                    fetchPriority="high"
                     className="hidden md:block w-screen max-w-none relative left-1/2 -translate-x-1/2"
                 />
             </div>
