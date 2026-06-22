@@ -251,6 +251,10 @@
                group-hover:scale-95 group-hover:text-[var(--color-gris-oscuro)]
                group-active:scale-95 group-active:text-[var(--color-gris-oscuro)];
     }
+
+    .error-message {
+        @apply text-p2 text-[var(--color-blanco)] bg-[var(--color-rojo)] py-1 px-2 -mt-1
+    }
 }
 
 /* Slider (About section) */
